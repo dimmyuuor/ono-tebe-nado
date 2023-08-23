@@ -42,7 +42,7 @@
 
 .header_address {
     font-style: normal;
-    line-height: 24.3px; 
+    line-height: 24.3px;
     font-size: 18px;
 }
 
@@ -292,16 +292,13 @@
 
 .footer__menu-list {
     padding-left: 360px;
+    text-align: center;
+    list-style-type: none;
 }
 
 .footer__menu-link_active {
     text-align: center;
     text-decoration: none;
-    list-style-type: none;
-}
-
-.footer__menu-list {
-    text-align: center;
     list-style-type: none;
 }
 
