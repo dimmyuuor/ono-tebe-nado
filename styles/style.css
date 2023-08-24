@@ -207,7 +207,7 @@
 }
 
 .card__text_3 {
-    padding-top: 84px;
+    padding-top: 80px;
     font-size: 20px;
     color: #FFF;
     padding-left: 40px;
@@ -243,20 +243,31 @@
     margin-top: 30px;
 }
 
+
+
+
+
+
+
 .about {
     margin-top: 181px;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 
 .about__column {
+    display: grid;
+    grid-template-columns: 455px auto;
+}
+
+.about__logo {
     background-color:#000;
     width: 240px;
     height: 240px;
     border-radius: 50%;
     margin-left: 95px;
-    display: grid;
-    grid-template-columns: 360px 885px;
+    grid-row-start: auto;
 }
 
 .about__logo-image {
@@ -275,16 +286,24 @@
 
 .about__text {
     font-size: 20px;
-
+    grid-column: 2/3;
+    line-height: normal;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
 }
 
-.about__text_row {
-    padding-top: 25px;
-    font-size: 20px;
-}
+
+
+
+
+
+
+
+
 
 .footer {
-    padding-top: 430px;
+    padding-top: 180px;
     padding-left: 50px;
     margin-bottom: 66px;
     display: flex;
