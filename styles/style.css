@@ -6,7 +6,7 @@
     align-items: center;
     font-size: 18px;
     display: grid;
-    grid-template-columns: 595px 505px 240px;
+    grid-template-columns: 1fr min-content 1fr;
 }
 
 .header__links-list {
@@ -47,6 +47,8 @@
     line-height: 24.3px;
     font-size: 18px;
     width: 240px;
+    justify-self: end;
+
 }
 
 .telephone, .email {
@@ -128,15 +130,16 @@
     position: relative;
     z-index: 1;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 78px; 
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 .cover__description-text {
     word-spacing: 18px;
-    padding-bottom: 62px;
     display: inline-block;
-    padding-left: 420px;
-    padding-top: 11px;
-    padding-right: 80px;
 }
 
 .bet-button {
@@ -147,7 +150,6 @@
     text-transform: uppercase;
     padding: 12px 32px; 
     border: 1px solid #fff;
-    margin-bottom: 48px;
 }
 
 .lots {
@@ -192,6 +194,7 @@
     z-index: 1;
     height: 100%;
     width: 100%;
+    justify-content: space-between;
 }
 
 .card__title {
@@ -325,10 +328,10 @@
 }
 
 .footer {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
     padding-top: 180px;
-    padding-left: 49px;
-    margin-bottom: 66px;
-    display: flex;
+    padding-bottom: 66px;
 }
 
 .footer__menu {
@@ -345,6 +348,7 @@
 .footer__menu-list-item {
     text-decoration: none;
     font-size: 18px;
+    width: 150px;
 }
 
 .footer__menu-link_active {
