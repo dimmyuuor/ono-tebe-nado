@@ -47,8 +47,10 @@
     line-height: 24.3px;
     font-size: 18px;
     width: 240px;
-    justify-self: end;
+}
 
+.header__address-column {
+    justify-self: end;
 }
 
 .telephone, .email {
@@ -176,6 +178,7 @@
 }
 
 .lots__card-list-item {
+    display: flex;
     width: 430px;
     min-height: 450px;
     flex-grow: 1;
@@ -190,11 +193,13 @@
 
 .card {
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     position: relative;
     z-index: 1;
     height: 100%;
     width: 100%;
-    justify-content: space-between;
+    background-size: cover;
 }
 
 .card__title {
@@ -210,58 +215,29 @@
     margin-right: 40px;
 }
 
-.card__text_1 {
-    padding-top: 202px;
+.card__text {
+    display: flex;
     font-size: 20px;
     color: #FFF;
     position: relative;
     z-index: 1;
     font-style: normal;
     font-weight: 400;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.card__text_2 {
-    padding-top: 32px;
-    font-size: 20px;
-    color: #FFF;
-    position: relative;
-    z-index: 1;
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 40px;
-    margin-right: 40px;
-}
-
-.card__text_3 {
-    padding-top: 80px;
-    font-size: 20px;
-    color: #FFF;
-    position: relative;
-    z-index: 1;
-    font-style: normal;
-    font-weight: 400;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
 }
 
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    width: 100%;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    width: 100%;
 }
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    width: 100%;
 }
 
 .lots__look-more-link {
@@ -330,18 +306,14 @@
 .footer {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
-    padding-top: 180px;
-    padding-bottom: 66px;
+    margin: 180px 50px 66px 50px;
 }
 
 .footer__menu {
-    width: auto;
-    padding-right: 355px;
+    text-align: center;
 }
 
 .footer__menu-list {
-    padding-left: 358px;
-    text-align: center;
     list-style-type: none;
 }
 
@@ -352,9 +324,7 @@
 }
 
 .footer__menu-link_active {
-    text-align: center;
     text-decoration: none;
-    list-style-type: none;
 }
 
 .footer__menu-link {
@@ -364,7 +334,8 @@
 
 .footer__social-list {
     list-style-type: none;
-    display: flex;
     width: 240px;
     gap: 47px;
+    display: flex;
+    justify-self: end;
 }
